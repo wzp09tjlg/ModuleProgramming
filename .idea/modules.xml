@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyMoudleTest.iml" filepath="$PROJECT_DIR$/MyMoudleTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basereslibrary/basereslibrary.iml" filepath="$PROJECT_DIR$/basereslibrary/basereslibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseutilslibrary/baseutilslibrary.iml" filepath="$PROJECT_DIR$/baseutilslibrary/baseutilslibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottomapp/bottomapp.iml" filepath="$PROJECT_DIR$/bottomapp/bottomapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topapp/topapp.iml" filepath="$PROJECT_DIR$/topapp/topapp.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.COMPILE_SDK_VERSION
+    buildToolsVersion rootProject.ext.BUILD_TOOL_VERSION
+
+    defaultConfig {
+        //不能缺少这个
+        applicationId "com.millet.myapplication"
+        minSdkVersion rootProject.ext.MIN_SDK_VERSION
+        targetSdkVersion rootProject.ext.TARGET_SDK_VERSION
+        versionCode rootProject.ext.VERSION_CODE
+        versionName rootProject.ext.VERSION_NAME
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //这里要注意的，build.gradle中避免有重复的引用
+    if (rootProject.ext.isModule) {
+        compile project(':basereslibrary')
+        compile project(':baseutilslibrary')
+    } else {
+        compile project(':bottomapp')
+        compile project(':topapp')
+    }
+}
